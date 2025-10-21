@@ -4,8 +4,6 @@ This project use **Cpnvolutional network (CNN)** to recognize handwritten digits
 
 ## Usage
 1. Install lib
- 
-```bash
-pip install -r requirements.txt```
-
-2. 
+ ```bash
+pip install -r requirements.txt
+ ```
