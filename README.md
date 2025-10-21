@@ -7,9 +7,9 @@ This project use **Cpnvolutional network (CNN)** to recognize handwritten digits
  ```bash
 pip install -r requirements.txt
  ```
-2. To starting train model, run the code below:
+2. To train model, run the code below:
 ```bash
-python prj2_handwrite.py
+python handwrite.py
  ```
 After the process complete, the model will save as file :
 ```bash
