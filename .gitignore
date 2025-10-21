@@ -13,15 +13,25 @@ venv/
 
 # Model and checkpoints
 *.h5
+*.hdf5
 *.ckpt
 *.pb
-
-# Jupyter checkpoints
-*.ipynb_checkpoints
+*.tflite
 
 # Logs and temporary files
 logs/
 *.log
-.DS_Store
-.vscode/
-.idea/
+*.txt
+*.csv
+*.json
+*.tmp
+
+# --- Training result images ---
+*.png
+*.jpg
+*.jpeg
+
+# --- Gradio / Web cache ---
+gradio_cache/
+__outputs__/
+__uploads__/
