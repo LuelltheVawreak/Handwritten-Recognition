@@ -1,0 +1,27 @@
+```txt
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+.env
+.venv/
+env/
+venv/
+
+# Model and checkpoints
+*.h5
+*.ckpt
+*.pb
+
+# Jupyter checkpoints
+*.ipynb_checkpoints
+
+# Logs and temporary files
+logs/
+*.log
+.DS_Store
+.vscode/
+.idea/
