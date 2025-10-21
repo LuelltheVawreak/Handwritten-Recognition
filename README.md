@@ -7,3 +7,7 @@ This project use **Cpnvolutional network (CNN)** to recognize handwritten digits
  ```bash
 pip install -r requirements.txt
  ```
+2. Train Model
+```bash
+python prj2_handwrite.py
+ ```
