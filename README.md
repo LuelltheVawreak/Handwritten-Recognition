@@ -23,6 +23,8 @@ The Gradio Interface will automatically run after training. The user can draw di
 After train 10 epochs with SGD optimizer (lr = 0.01, momentum = 0.9) model got:
 
 Training: accuracy 99.35% and loss 0.021
+
 Validation: accuracy 98.92% and loss 0.033
+
 Test: accuracy 98.78% and loss 0.040
     
