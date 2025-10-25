@@ -109,28 +109,3 @@ print(classification_report(y_true, y_pred))
 cm = confusion_matrix(y_true, y_pred)
 print(cm)
 
-# Gradio interface
-
-# Load pretrain model
-model = load_model("mnist_model.h5")
-
-# input and predict
-def predict_digit(img):
-    img = cv2.resize(img, (28, 28))
-    img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-    img = img.astype("float32") / 255.0
-    img = img.reshape(1, 28, 28, 1)
-    pred = model.predict(img)
-    return {str(i): float(pred[0][i]) for i in range(10)}
-
-# create intereface
-demo = gr.Interface(
-    fn=predict_digit,
-    inputs=gr.Image(width=200, height=200, image_mode='RGB', label=" Vẽ hoặc tải ảnh số viết tay"),
-    outputs=gr.Label(num_top_classes=3, label="Kết quả dự đoán"),
-    live=False,
-    title="MNIST Digit Recognizer",
-    description="Vẽ hoặc upload ảnh số viết tay (0–9) để mô hình dự đoán."
-)
-
-demo.launch()
